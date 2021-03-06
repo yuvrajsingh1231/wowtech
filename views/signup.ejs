@@ -1,0 +1,95 @@
+<%- include('header') -%>
+
+<div class="container-fluid ">
+  <div class="container ">
+      <div class="row ">
+          <div class="col-sm-10 login-box">
+              <div class="row">
+                  <div class="col-lg-8 col-md-7 log-det">
+                      
+                      <h2>Welcome to My site</h2>
+                      <h2><img src="/images/img_avatar3.png" class = "profileImg" alt=""></h2>
+
+                        <form action="signup" method="POST">
+                      <div class="text-box-cont mt-3">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></i></span>
+                            </div>
+                            <input type="text"
+                             class="form-control"
+                              placeholder="Username"
+                               aria-label="name"
+                                aria-describedby="basic-addon1"
+                                 name="name"
+                                  value = "<%= typeof name != 'undefined' ? name : '' %>" >
+                        </div>
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></i></span>
+                              </div>
+                              <input type="email"
+                               class="form-control" 
+                               placeholder="email" 
+                               aria-label="Username"
+                                aria-describedby="basic-addon1"
+                                name="email" 
+                                value = "<%= typeof email != 'undefined' ? email : '' %>" >
+                                
+                          </div>
+                           <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"><i class="bi bi-file-lock2-fill"></i></i></span>
+                              </div>
+                              <input type="password"
+                               class="form-control"
+                                placeholder="Password"
+                                 aria-label="Username" 
+                                 aria-describedby="basic-addon1"
+                                  name="password"
+                                  value = "<%= typeof password != 'undefined' ? password : '' %>"
+                                  >
+                              </div>
+                          
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-file-lock2-fill"></i></i></span>
+                            </div>
+                            <input type="password"
+                             class="form-control"
+                              placeholder="Confirm Password"
+                               aria-label="Username"
+                                aria-describedby="basic-addon1" 
+                                name="confirmpassword" 
+                                value = "<%= typeof confirmpassword != 'undefined' ? confirmpassword : '' %>"
+                                >
+                            
+                        </div>
+                          
+                          <div class="input-group center mb-3">
+                              <button type="submit" class="btn btn-success btn-round">SIGN UP</button>
+                          </div>    
+                      </div>
+                      <div class="text-center text-danger mb-2" style = "width: 100%;" id = "errorMessage"><% include ./messages %></div>
+                    </form>
+
+
+                  </div>
+                  <div class="col-lg-4 col-md-5 box-de">
+                      <div class="ditk-inf">
+                          <h2 class="w-100">Alredy Have an Account </h2>
+                          <p>Simply login your account by clicking the Login Button</p>
+                          <a href="login">
+                          <button type="button" class="btn btn-outline-light">LOGIN</button>
+                          </a>
+                      </div> 
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<%- include('footer') -%>

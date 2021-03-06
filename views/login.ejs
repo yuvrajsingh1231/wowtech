@@ -1,0 +1,68 @@
+<%- include('header') -%>
+<div class="container-fluid ">
+  <div class="container ">
+      <div class="row ">
+          <div class="col-sm-10 login-box">
+              <div class="row">
+                  <div class="col-lg-8 col-md-7 log-det">
+                    <% include ./messages %>
+                      <h2>Welcome to My site</h2>
+                      
+                      <h2><img src="/images/img_avatar3.png" class = "profileImg" alt=""></h2>
+
+                        <form action="login" method="post">
+                      <div class="text-box-cont mt-3">
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
+                              </div>
+                              <input 
+                              type="email" 
+                              class="form-control" 
+                              placeholder="email"
+                               aria-label="Username" 
+                               aria-describedby="basic-addon1"
+                                name="email">
+                          </div>
+                           <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1"><i class="bi bi-file-lock2-fill"></i></i></span>
+                              </div>
+                              <input type="password" 
+                              class="form-control" 
+                              placeholder="Password"
+                               aria-label="Username"
+                                aria-describedby="basic-addon1"
+                                 name="password" >
+                          </div>
+                          <div class="row">
+                              <p class="forget-p">Forget Password ?</p>
+                          </div>
+                          <div class="input-group center mb-3">
+                              <button type="submit" class="btn btn-success btn-round">SIGN IN</button>
+                          </div>
+                          
+                      </div>
+                          
+                    </form>
+
+
+                  </div>
+                  <div class="col-lg-4 col-md-5 box-de">
+                      <div class="ditk-inf">
+                          <h2 class="w-100">Din't Have an Account </h2>
+                          <p>Simply Create your account by clicking the Signup Button</p>
+                          <a href="signup">
+                          <button type="button" class="btn btn-outline-light">SIGN UP</button>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<%- include('footer') -%>   

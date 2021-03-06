@@ -1,0 +1,44 @@
+<%- include('header') -%>
+
+
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+    <a class="navbar-brand" href="#">Namaste <%= name%> ji</a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="logout">logout</a>
+        </li>
+            
+        <li class="nav-item">
+            <a class="nav-link" href="error">Error Page</a>
+          </li>
+          
+            
+              
+             
+      </ul>
+       
+    </div> 
+    
+  </nav>
+  <br>
+
+<div class="jumbotron">  
+<h1 class="text-center text-info">This is Version 0.0.1 of my Website </h1>
+
+</div>
+
+<div class="text-center mt-md-5">
+<h2><small>Its Features (features can be acessd on navigation bar)</small></h2>
+</div>
+<div class="ml-3 mr-3 mt-3">
+    <p>=> It has login page with authentication and it stores password in hased format.</p>
+    <p class="mt-1 bg-dark text-white mt-2" style="width: fit-content;">=> 404 Handle error Page</p>
+    <P class="mt-1 mt-2">=> Rest features i forgot them! if u find then mail me also u can mail me by <a href="mailto:singhyuvraj2k@gmial.com"><kbd class="bg-info">Click here</kbd></a></P>
+</div>
+<div class = "text-right mr-2 text-primary  align-bottom mt-4 mr-md-5 mb-3">Created by:- Yuvraj Singh</div>
+<%- include('footer') -%>
